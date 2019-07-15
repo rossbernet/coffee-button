@@ -38,7 +38,7 @@ def handle(event, context):
 
     if event['clickType'] == str(ButtonClickType.Double):
         requests.post(slack_webhook_url, json={
-            'text': 'I was rushing to a meeting, and polished off the last of the brewed coffee, wish I had time to make another pot, but alas, I do not. Sorry, we are out of brewed coffee.',  # NOQA
+            'text': 'Oh no! The pot is empty but my meeting is starting! Oops and sorry',  # NOQA
             'channel': slack_channel})
 
     if event['clickType'] == str(ButtonClickType.Long):
